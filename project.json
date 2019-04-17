@@ -1,0 +1,9 @@
+{
+    "id": "flecs.components.dds",
+    "type": "package",
+    "value": {
+        "author": "Sander Mertens",
+        "description": "Components describing a DDS application",
+        "use": ["flecs"]
+    }
+}
