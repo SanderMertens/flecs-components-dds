@@ -18,18 +18,17 @@ typedef struct DdsReader {
     const char *topic_name;
 } DdsReader;
 
-typedef struct EcsComponentsDdsHandles {
+typedef struct FlecsComponentsDds {
     ECS_DECLARE_COMPONENT(DdsDomainParticipant);
     ECS_DECLARE_COMPONENT(DdsWriter);
     ECS_DECLARE_COMPONENT(DdsReader);
-} EcsComponentsDdsHandles;
+} FlecsComponentsDds;
 
-void EcsComponentsDds(
+void FlecsComponentsDdsImport(
     ecs_world_t *world,
-    int flags,
-    void *handles_out);
+    int flags);
 
-#define EcsComponentsDds_ImportHandles(handles)\
+#define FlecsComponentsDdsImportHandles(handles)\
     ECS_IMPORT_COMPONENT(handles, DdsDomainParticipant);\
     ECS_IMPORT_COMPONENT(handles, DdsWriter);\
     ECS_IMPORT_COMPONENT(handles, DdsReader);
