@@ -1,4 +1,4 @@
-#include <include/dds.h>
+#include <flecs_components_dds.h>
 
 void FlecsComponentsDdsImport(
     ecs_world_t *world,

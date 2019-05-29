@@ -2,7 +2,7 @@
 #define FLECS_COMPONENTS_DDS_H
 
 /* This generated file contains includes for project dependencies */
-#include "bake_config.h"
+#include "flecs-components-dds/bake_config.h"
 
 typedef struct DdsDomainParticipant {
     unsigned int domain_id;
